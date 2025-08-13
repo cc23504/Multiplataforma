@@ -9,7 +9,16 @@ void main() {
 String verificarDespesaLimite(double despesa, limite) {
   if (despesa > limite) {
     return 'Despesa maior que limite disponivel';
-  } if else ()
-    return 'Valor de limite: $limite, valor de despesa: $despesa';
+  } else (despesa <= limite){
+      double valor = limite - despesa;
+    return 'Valor atual de limite: $valor';
   }
-}
+  
+  }
+String verificarDespesaLimite(double despesa, double limite) {
+  if (despesa > limite) {
+    return 'Despesa maior que limite disponível';
+  } else if (despesa <= limite) {
+    double valor = limite - despesa;
+    return 'Valor atual de limite: $valor';
+  }
